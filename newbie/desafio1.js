@@ -1,4 +1,4 @@
-//Identificação do país com maior e menor população;
+//Identificação do país com maior e menor população, e a diferença entre a maior e a menor população;
 
 const paises = [
     { nome: "Brasil", populacao: 49900},
@@ -26,5 +26,7 @@ for (let i = 0; i < paises.length; i++) {
         nomeDoPais2 = paises[i].nome
     } 
 } 
+const diferenca = maiorPopulacao - menorPopulacao
 console.log('País com a maior população: ' + nomeDoPais1 +', com um total de', maiorPopulacao, 'habitantes.')
 console.log('País com a menor população: ' + nomeDoPais2 +', com um total de', menorPopulacao, 'habitantes.')
+console.log('Diferença entre a maior e a menor população: ' + diferenca)
