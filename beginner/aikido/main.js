@@ -1,5 +1,5 @@
-let x = 2
-let y = 30
+let x = 3
+let y = 180
 
 if (x < 1) {
     console.log('branca')
