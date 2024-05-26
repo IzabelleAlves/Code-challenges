@@ -23,4 +23,4 @@ for (let i = 0; i < n; i++) {
     }
 }
 
-vilaProtegida ? console.log('naruto defendeu a Vila') : console.log('Madara venceu')
+vilaProtegida ? console.log('Naruto defendeu a Vila') : console.log('Madara venceu')
