@@ -1,22 +1,22 @@
-let leituraSensor = 5
-let capacidadeMax = 10
-let saidaEEntrada = [
-  {saem: 0, entram: 3},
-  {saem: 0, entram: 5},
-  {saem: 0, entram: 2},
-  {saem: 3, entram: 4},
-  {saem: 6, entram: 4},
+let readingSensor = 5
+let capacityMax = 10
+let exitAndEntrance = [
+  {leave: 0, enter: 3},
+  {leave: 0, enter: 5},
+  {leave: 0, enter: 2},
+  {leave: 3, enter: 4},
+  {leave: 6, enter: 4},
 ]
-let totalPessoas = 0
-let capacidadeExcedida = false
+let totalPeople = 0
+let capacityExceeded = false
 
-for (let i = 0; i < leituraSensor; i++){
-  totalPessoas -= saidaEEntrada[i].saem
-  totalPessoas += saidaEEntrada[i].entram
+for (let i = 0; i < readingSensor; i++){
+  totalPeople -= exitAndEntrance[i].leave
+  totalPeople += exitAndEntrance[i].enter
 
-  if (totalPessoas > capacidadeMax){
-    capacidadeExcedida = true
+  if (totalPeople > capacityMax){
+    capacityExceeded = true
     break;
   }
 }
-console.log(capacidadeExcedida ? 'S' : 'N')
+console.log(capacityExceeded ? 'S' : 'N')
