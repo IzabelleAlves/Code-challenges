@@ -5,6 +5,6 @@ let finalWork = 9.0
 const weightExam = 4
 const weightfinalWork = 2
 
-let average = (grade1 * weightExam + grade2 * weightExam + finalWork * weightfinalWork) / (weightExam + weightExam + weightfinalWork)
+let average = (grade1 * weightExam + grade2 * weightExam + finalWork * weightfinalWork) / (weightExam * 2 + weightfinalWork)
 
 console.log(average)
