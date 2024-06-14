@@ -1,13 +1,13 @@
-let xpNecessario = 100
-let missoesCumpridas = 4
-let xpPorMissao = [10, 15, 10, 5]
+let xpRequired = 100
+let missionsFulfilled = 4
+let xpByMission = [10, 15, 10, 5]
 let bonus = [1, 2, 3, 4]
 let xpTotal = 0
 
-for (let i = 0; i < xpPorMissao.length; i++){
-  xpTotal += xpPorMissao[i] * bonus[i]
+for (let i = 0; i < xpByMission.length; i++){
+  xpTotal += xpByMission[i] * bonus[i]
 } 
-if (xpTotal >= xpNecessario){
+if (xpTotal >= xpRequired){
   console.log('Upou de Nivel!')
 } else {
 console.log('Não foi dessa vez!')
