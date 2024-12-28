@@ -1,6 +1,5 @@
 // let tabuleiro =  [0, 1, 1, 1, 0]
 let tabuleiro =  [0, 1, 1, 0, 1]
-//se tiver 0, n tem nd se tiver 1 tem algo
 let tabuleiroAtualizado = []
 let contadorMinas = 0
 
